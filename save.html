@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+
+</head>
+
+<body>
+    <div id="savingFile" style="display: none; position: fixed; background-color: black; margin-left: 470px;" align="center">
+        <div style="outline: none; margin-left: 330px; background-color: #ffffff; height: 25px; width: 25px; border-radius: 5px;">
+            <img id="back" style="height: 20px; width: 20px; margin-top: 1.5px;" src="close.png" />
+        </div>
+        <h2>Discription</h2>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <h3 style=" width: 350px; margin-top: 1px;">ENTER YOUR FILE NAME TO SAVE</h3>
+        File Name : <input id="filename" type="text" placeholder="- - - - - -FileName.html- - - - - - -">
+        <br>
+        <br>
+        <button id="saves" type="button">Save File</button>
+        <button id="csssaves" type="button">Save File</button>
+        <button id="jssaves" type="button">Save File</button>
+    </div>
+    <div id="total" style="display: block;">
+        <div class="head">
+            <img class="heading" src="logo.jpg" />
+        </div>
+
+
+        <div id="butn">
+            <button id="htmls" onclick="html()">HTML</button>
+            <button id="csss" onclick="css()">CSS STYLEESHEET</button>
+            <button id="jss" onclick="js()">JAVASCRIPT</button>
+        </div>
+        <div>
+            <div class="full" id="ht" style="display: block;" spellcheck="false">
+                <div id="dark" style="display: block;">
+                    <div class="allbtn">
+                        <button id="save" onclick="html_save()">Save</button>
+                        <div class="btn">
+                            <label for="files">Import</label>
+                            <input id="files" style="visibility: hidden;" type="file" onchange="readFile(this)">
+                        </div>
+
+                    </div>
+                    <br>
+
+                </div>
+                <div class="title">
+                    <p class="p" id="p1"></p>
+                </div>
+                <textarea id="text" class="text" rows="18" cols="70"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+            
+<body>
+
+<script type="text/javascript" src=""></script>
+</body>
+            
+</html></textarea>
+            </div>
+            <div class="full" id="cs" style="display: none;" spellcheck="false">
+                <div id="css" style="display: block;">
+                    <div class="allbtn">
+                        <button id="csssave" onclick="css_save()">Save</button>
+                        <div class="btn">
+                            <label for="cssfiles">Import</label>
+                            <input id="cssfiles" style="visibility: hidden;" type="file" onchange="readFiles(this)">
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="title">
+                        <p class="p" id="p2"></p>
+                    </div>
+                    <textarea id="cssstyle" class="text" rows="18" cols="70">/* CSS FILE */</textarea>
+                </div>
+            </div>
+            <div class="full" id="jas" style="display: none;" spellcheck="false">
+                <div id="jas" style="display: block;">
+                    <div class="allbtn">
+                        <button id="jssave" onclick="js_save()">Save</button>
+                        <div class="btn">
+                            <label for="jsfiles">Import</label>
+                            <input id="jsfiles" style="visibility: hidden;" type="file" onchange="readFilejs(this)">
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="title">
+                        <p class="p" id="p3"></p>
+                    </div>
+                    <textarea id="javas" class="text" rows="18" cols="70">//JAVASCRIPT FILE</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="filereader.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="btn.js">
+    </script>
+    <script src="savefile.js">
+    </script>
+</body>
+
+</html>
